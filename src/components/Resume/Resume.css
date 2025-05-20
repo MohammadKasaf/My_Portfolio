@@ -1,0 +1,177 @@
+.resume-section {
+  padding: 5rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.section-title span {
+  color: #FFD700;
+  position: relative;
+}
+
+.section-title span::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFD700;
+}
+
+.resume-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.resume-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 2.5rem;
+  flex: 1;
+  border: 1px solid #333;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+  border-color: #FFD700;
+}
+
+.resume-icon {
+  font-size: 3rem;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+}
+
+.resume-title {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.resume-description {
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.download-btn, .view-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.download-btn {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.download-btn:hover {
+  background-color: #e6c200;
+}
+
+.view-btn {
+  background-color: transparent;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+}
+
+.view-btn:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.skills-highlight {
+  flex: 1;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid #333;
+}
+
+.skills-highlight h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #FFD700;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.skills-highlight ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-highlight li {
+  margin-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.skills-highlight li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #FFD700;
+}
+
+.skills-highlight span {
+  color: #FFD700;
+  font-weight: 600;
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .resume-content {
+    flex-direction: column;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .resume-buttons {
+    flex-direction: column;
+  }
+  
+  .download-btn, .view-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,130 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap');
+
+.about-section {
+  padding: 8rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #e0e0e0;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(90deg, #FFD700, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #aaaaaa;
+}
+
+.about-details {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  max-width: 800px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.highlight {
+  color: #FFD700;
+  font-weight: 600;
+}
+
+.about-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat-item {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFD700;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 6rem 1.5rem;
+  }
+  
+  .name {
+    font-size: 3rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .about-stats {
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+    min-width: 120px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}

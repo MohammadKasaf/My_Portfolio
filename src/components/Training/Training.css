@@ -1,0 +1,130 @@
+.trainings-section {
+  padding: 5rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.trainings-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.section-title span {
+  color: #FFD700;
+  position: relative;
+}
+
+.section-title span::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFD700;
+}
+
+.training-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+  border-color: #FFD700;
+}
+
+.training-header {
+  margin-bottom: 1.5rem;
+}
+
+.training-title {
+  font-size: 1.8rem;
+  color: #FFD700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.training-meta {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.training-duration, .training-role {
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.training-duration::before {
+  content: '🗓️';
+}
+
+.training-role::before {
+  content: '🏢';
+}
+
+.training-provider {
+  color: #FFD700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.training-details {
+  list-style: none;
+  padding: 0;
+}
+
+.training-details li {
+  margin-bottom: 0.8rem;
+  padding-left: 2rem;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+}
+
+.training-details li i {
+  position: absolute;
+  left: 0;
+  color: #FFD700;
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .training-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .training-title {
+    font-size: 1.5rem;
+  }
+}
